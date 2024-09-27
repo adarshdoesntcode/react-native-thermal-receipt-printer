@@ -833,7 +833,14 @@ var NetPrinterEventEmitter =
   Platform.OS === "ios"
     ? new NativeEventEmitter(RNNetPrinter)
     : new NativeEventEmitter();
-export { COMMANDS, NetPrinter, BLEPrinter, USBPrinter, NetPrinterEventEmitter };
+export {
+  COMMANDS,
+  processColumnText,
+  NetPrinter,
+  BLEPrinter,
+  USBPrinter,
+  NetPrinterEventEmitter,
+};
 export var RN_THERMAL_RECEIPT_PRINTER_EVENTS;
 (function (RN_THERMAL_RECEIPT_PRINTER_EVENTS) {
   RN_THERMAL_RECEIPT_PRINTER_EVENTS["EVENT_NET_PRINTER_SCANNED_SUCCESS"] =
